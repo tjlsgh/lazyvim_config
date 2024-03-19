@@ -13,9 +13,8 @@ return {
       "nvim-tree/nvim-web-devicons",
     },
     opts = {
-      -- 配置放在这里
       ---@type string
-      arg = "leetcode.nvim",
+      arg = "lc",
 
       ---@type lc.lang
       lang = "cpp",
