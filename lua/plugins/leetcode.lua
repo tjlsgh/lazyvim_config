@@ -13,6 +13,7 @@ return {
       "nvim-tree/nvim-web-devicons",
     },
     opts = {
+      -- test
       ---@type string
       arg = "lc",
 
@@ -101,5 +102,9 @@ return {
       ---@type boolean
       image_support = false,
     },
+    -- keys = {
+    --   { "<leader>tr", "<cmd>Leet run<cr>", desc = "leet run" },
+    --   { "<leader>ts", "<cmd>Leet submit<cr>", desc = "leet submit" },
+    -- },
   },
 }
