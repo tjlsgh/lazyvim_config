@@ -1,11 +1,12 @@
 return {
   -- add gruvbox
-  { "ellisonleao/gruvbox.nvim" },
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  { "ellisonleao/gruvbox.nvim", lazy = false },
+  { "catppuccin/nvim", lazy = false, name = "catppuccin", priority = 1000 },
   {
     "sainnhe/everforest",
+    lazy = false,
   },
-  { "shaunsingh/nord.nvim" },
+  { "shaunsingh/nord.nvim", lazy = false },
   {
     "AlexvZyl/nordic.nvim",
     lazy = false,
@@ -32,13 +33,18 @@ return {
     --   vim.cmd("colorscheme poimandres")
     -- end,
   },
+  {
+    "rktjmp/lush.nvim",
+    lazy = false,
+  },
 
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
       -- colorscheme = "catppuccin",
-      colorscheme = "nordic",
+      colorscheme = "everforest",
+      -- colorscheme = "nordic",
     },
   },
 }
