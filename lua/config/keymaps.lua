@@ -12,3 +12,5 @@ vim.keymap.set("n", "<C-w>|", cmd("WindowsMaximizeHorizontally"))
 vim.keymap.set("n", "<C-w>=", cmd("WindowsEqualize"))
 
 vim.keymap.set("n", "<leader>n", "<cmd>NoiceDismiss<cr>", { desc = "Dismiss noice" })
+
+vim.keymap.set("n", "<leader>t", "<cmd>Twilight<cr>", { desc = "Toogle twilight" })
