@@ -40,7 +40,7 @@ return {
       ---@type boolean
       logging = true,
 
-      injector = {}, ---@type table<lc.lang, lc.inject>
+      -- injector = {}, ---@type table<lc.lang, lc.inject>
 
       cache = {
         update_interval = 60 * 60 * 24 * 7, ---@type integer 7 days
@@ -84,6 +84,13 @@ return {
 
         ---@type fun()[]
         ["leave"] = {},
+      },
+
+      injector = { ---@type table<lc.lang, lc.inject>
+        ["cpp"] = {
+          before = { "#include <bits/stdc++.h>", "using namespace std;" },
+          after = "int main() {}",
+        },
       },
 
       keys = {
